@@ -1,6 +1,6 @@
 # journal
 #First Week
 
-Learning Basics of Kubernetes.
-Summer Student Lectures
-Summer Student Tours
+Learning Basics of Kubernetes.\n
+Summer Student Lectures\n
+Summer Student Tours\n
