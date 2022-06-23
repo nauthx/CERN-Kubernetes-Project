@@ -8,5 +8,12 @@ We also went on a couple of tours to explore some of the important CERN sites su
 
 ## Week 2 - Team Building and learning the basics on deploying apps in Kubernetes.
 
+After having a meeting with Konstantinos, Rajula and Francisco we have decided to make a plan where my learning goals are targeted as well as the work they want done also is to be targeted.
+
+Initially an issue list was created on a github repo and doing these issues will eventually lead to learn more about Kubernetes and how it's structured.
+
+The first task was:
+
+
 
 
