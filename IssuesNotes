@@ -1,0 +1,40 @@
+#Notes:
+
+##Applications running inside the pod have a port number and that should match the service target port number if we want to communicate with it.
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+#Questions:
+-----------------------------------------------------------------------------------------------------------------------
+##How does configmap actually work?
+
+##Current hurdles:
+
+### I have my contents of index.html in the actual configmap, that raises the question how can I add files? do I just ### keep adding more contents to the configmap or can I just give a directory to fetch all the .html files from?
+
+### Can I just give the directory under the "data" in the configmap and it will fetch it automatically?
+
+### Answer:
+
+By configuring the deployment and mentioning the persistent volume in the volumes section will give the pods access to the configmap. and just adding files to the volumemounts path will fetch the files automatically. Note: index.html has a special property where in the url it sufficient to call '/'. Every other file behaves as follows: '../<filename.html>' 
+
+-----------------------------------------------------------------------------------------------------------------------
+###How to serve HTML file using nginx dynamically?
+
+###Answer:
+The deployment will always fetch the current file in the given directory, meaning as the file it self changes inside the directory, calling the same url again will display different results. Therefore it is dynamic by nature.
+-----------------------------------------------------------------------------------------------------------------------
+###Can I just drop another HTML file in the index.html directory and expect it to work? Why or why not?
+
+###Answer:
+Yes, as long as we're specifying in the deployment that this is the path where the html files should be fetched from.
+-----------------------------------------------------------------------------------------------------------------------
+###Is there a difference between serving static and dynamic files in terms of configuration, that is: does the deployment automatically display the current version of the file or does that have to be specified somewhere?
+
+###Answer:
+Yes the deployment will always display the current file in the directory, meaning any changes that are made to the file between 2 calls will yield different results.
+-----------------------------------------------------------------------------------------------------------------------
+###What is the meaning of life?
+
+###Answer: 42
+-----------------------------------------------------------------------------------------------------------------------
+
