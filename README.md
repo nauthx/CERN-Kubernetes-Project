@@ -14,6 +14,27 @@ Initially an issue list was created on a github repo and doing these issues will
 
 The first task was:
 
+ Create an Nginx pod serving an index.html that says "Hello world" when you visit the root URL (/).
+
+ I first created a configmap and applied it, inside the configmap the contents of the index.html were also provided which I thought initially as a bit too hard coded.
+
+ Second task was:
+
+  Expose it on your openshift cluster to the external world, so that you can access it from anywhere within the CERN network.
+
+To solve this task I had to do a bit of research on the route/ingress and created a route and inside the configmap for the route, the appropriate port numbers were provided.
+
+Third task was:
+
+ Make sure that we can configure the contents of index.html without changing the pod's image.
+
+ For this I could just type kubectl edit index-html-configmap.yaml and the contents for the index.html were already under 'data' and when they were changed, the contents were also changed.
+
+Fourth task was:
+
+ Observe the nginx logs, which should show every time we hit the URL.
+
+ TO solve thi
 
 
 
