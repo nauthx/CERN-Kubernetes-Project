@@ -1,0 +1,22 @@
+How do we install Falco? Expectation: a procedural document giving all the steps in order to have it running, does falco require multiple instances? One instance is sufficient to inspect all things we want?
+
+
+Falco is installed using a DaemonSet on kubernetes, Therefore we follow the documentation on downloading and installing Falco and integrating it into Kubernetes here:
+https://falco.org/docs/getting-started/third-party/learning/
+
+Upon installing this, inspecting using kubectl get pods, there are six pods that are created, but the status is set to CrashLoopBackOff.
+---------------------------------------------------------
+---------------------------------------------------------
+How do monitor Falco actions? Expectation: a reference/commands on how to get Falco metrics/logs
+---------------------------------------------------------
+---------------------------------------------------------
+What is Falco's scope of inspection? Expectation: Describe on how we can have Falco monitoring one container, multiple containers, one deployment, all deployments based on a rule, etc.
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+
+How can we test that Falco is doing what we expect from it? Expectation: A small demo on how we can do malicious actions on a workload and see Falco reacting and alerting us about it
+( Example: let's try and do a simulated unauthorized action, how will Falco react? will we be notified about it?)
+---------------------------------------------------------
+---------------------------------------------------------
