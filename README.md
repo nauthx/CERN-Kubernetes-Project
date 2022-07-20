@@ -34,7 +34,8 @@ Fourth task was:
 
  Observe the nginx logs, which should show every time we hit the URL.
 
- TO solve thi
+ What was observed that different pods were handling the request, meaning there wasn't just one pod in charge of handling the request but all of them as a form of load balancing!
+ 
 
 
 
