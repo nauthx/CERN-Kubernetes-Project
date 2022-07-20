@@ -1,10 +1,21 @@
 How do we install Falco? Expectation: a procedural document giving all the steps in order to have it running, does falco require multiple instances? One instance is sufficient to inspect all things we want?
 
 
+
 Falco is installed using a DaemonSet on kubernetes, Therefore we follow the documentation on downloading and installing Falco and integrating it into Kubernetes here:
 https://falco.org/docs/getting-started/third-party/learning/
 
 Upon installing this, inspecting using kubectl get pods, there are six pods that are created, but the status is set to CrashLoopBackOff.
+
+After inspecting the logs of the pods we can see that there is a problem with falco_rules.yaml
+As it turns out the default falco config which can be viewed with kubectl edit configmap falco
+had some rules for containers that always forced the pods to restart.
+
+First naive and obvious solution is deleting the rules that are preventing the pods from starting.
+
+After that is done, the pods still can not start, the error now is a missing driver.
+
+After some research on the internet, a driver kit can be downloaded from falcosecurity github WIP
 ---------------------------------------------------------
 ---------------------------------------------------------
 How do monitor Falco actions? Expectation: a reference/commands on how to get Falco metrics/logs
