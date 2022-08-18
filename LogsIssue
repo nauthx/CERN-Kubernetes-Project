@@ -1,0 +1,6 @@
+Issue: https://gitlab.cern.ch/webservices/webframeworks-planning/-/issues/739
+
+ After a successful connection to DrupalSites, there exists a possiblity that the IP accompanied with the request is not the true IP of the client. And this can be done in multiple ways, for example various IP-Spoofing methods or in this example, we're examining the HTTP Header X-Forwarded-For and X-Originating-IP provided with the request to change the IP Address.
+
+ I used Postman as well as curl to reproduce this, but it is patched and there isn't a way to reproduce this error using the HTTP headers mentioned in the issue.
+ 
