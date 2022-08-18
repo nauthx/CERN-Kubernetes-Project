@@ -1,0 +1,9 @@
+Issue: https://gitlab.cern.ch/webservices/webframeworks-planning/-/issues/505
+
+For this issue what is required is an easy way to toggle the application to be only visibile to CERN or to the Internet.
+
+What is needed to make this work is to change the types by adding a visibility field enum to indicate the values have to be
+either cern or empty.
+
+and adding to the resources some logic in GO to look for the visibilty field and if it's set to make the changes accordingly in the route.
+
