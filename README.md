@@ -38,14 +38,12 @@ Fourth task was:
 
 ## Week 3 - Configuring persistent storage on the pods and updating the config map dynamically.
 
-Task:
-	Create a persistent storage in the deployment to be seen by all the pods and have a script to be executed
-	namely every 3 seconds to update the current time on the website by using the date function.
-
-	The idea is to mention the path of the persistent storage in the deployment so all the pods created by the deployment 
-	know where to look for persistent storage.
-
-	And inside the persistent storage we provide the script to run so that if a pod dies, the script is carried on by the other pods.
+Task Explanation:
+Create a persistent storage in the deployment to be seen by all the pods and have a script to be executed
+namely every 3 seconds to update the current time on the website by using the date function.
+The idea is to mention the path of the persistent storage in the deployment so all the pods created by the deployment 
+know where to look for persistent storage.
+And inside the persistent storage we provide the script to run so that if a pod dies, the script is carried on by the other pods.
 
 
 ## Week 4 - Falco/GitPod
