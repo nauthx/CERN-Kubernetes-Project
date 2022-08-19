@@ -9,12 +9,12 @@ when we validate the target cluster it starts its real task and can be configure
 
 ## chaos mesh ##
 Standing with the most GitHub stars Chaos Mesh does more than just killing a pod.
-*Kills containers in pods
+- Kills containers in pods
 
-*Network Delays and packet repeats
+- Network Delays and packet repeats
 
-*Simulates network partition
+- Simulates network partition
 
-*Problems with disks and reading/writing
+- Problems with disks and reading/writing
 
 and many more..
