@@ -83,13 +83,22 @@ Please refer to LogsIssue
 
 ## Week 9 - Add Visibility for Intranet/Internet switching
 
-Open Lab Lectures in the morning until noon
+ROOT Workshop
 
 Please refer to VisibilityIntranetInternet 
 
 ## Week 10 - Stability tests for critical Drupal websites (chaos engineering)
 
-Trying to install Gremlin/Litmus/Chaos Monkey to simulate failures in the clusters. WIP
+Trying to install Gremlin/Litmus/Chaos Monkey to simulate failures in the clusters.
+
+## Week 11 - vulnerabilities testing for critical Drupal websites (chaos engineering)
+
+Using ChaosMesh discovered various issues with load balancing pods and is being patched accordingily
+
+## Week 12 - vulnerabilities testing for critical Drupal websites (chaos engineering)
+
+Preparing the project research to present and making final changes to production site
+
 
  
 
